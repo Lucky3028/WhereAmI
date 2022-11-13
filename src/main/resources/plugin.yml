@@ -7,10 +7,10 @@ commands:
     description: This is a command to reload WhereAmI config.
   map:
     usage: /map
-    description: This is a command to show show a link to the player's location.
+    description: This is a command to show a link to the player's location in the web map.
 perimissions:
   whereami.map:
-    description: This permission allows a player to show a link to the player's location.
+    description: This permission allows a player to show a link to the player's location in the web map.
     default: true
   whereami.reload:
     description: This permission allows a sender to reload config.
