@@ -11,7 +11,7 @@ class WhereAmI extends JavaPlugin {
     saveDefaultConfig()
     MapDomain.load()
 
-    Map("whereami" -> Reload(), "map" -> ShowMap()).foreach {
+    Map("whereami" -> Reload(), "map" -> ShowMap).foreach {
       case (commandName, executor) => instance.getCommand(commandName).setExecutor(executor)
     }
 

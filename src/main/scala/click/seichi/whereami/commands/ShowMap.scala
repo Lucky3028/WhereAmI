@@ -4,9 +4,8 @@ import click.seichi.whereami.config.MapDomain
 import org.bukkit.ChatColor
 import org.bukkit.command.{Command, CommandExecutor, CommandSender}
 import org.bukkit.entity.Player
-import org.bukkit.plugin.java.JavaPlugin
 
-case class ShowMap()(implicit instance: JavaPlugin) extends CommandExecutor {
+object ShowMap extends CommandExecutor {
   override def onCommand(
     commandSender: CommandSender,
     command: Command,
