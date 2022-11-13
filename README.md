@@ -22,7 +22,7 @@ map-domain: ""
 
 * Use Conventional Commits in commit messages.
 * Run `sbt assembly` to build a jar.
-* Run `sbt scalafix` and `sbt scalafmt` to format codes.
+* Run `sbt scalafixAll` and `sbt scalafmtAll` to format codes.
  
 ## License
 
