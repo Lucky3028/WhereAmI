@@ -8,12 +8,12 @@ class WhereAmI extends JavaPlugin {
   override def onEnable(): Unit = {
     implicit val instance: WhereAmI = this
 
-    saveDefaultConfig()
-    MapDomain.load()
-
     Map("whereami" -> Reload(), "map" -> ShowMap).foreach {
       case (commandName, executor) => instance.getCommand(commandName).setExecutor(executor)
     }
+
+    saveDefaultConfig()
+    MapDomain.load()
 
     this.getLogger.info("WhereAmI is enabled.")
   }
