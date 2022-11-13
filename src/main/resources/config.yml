@@ -1,0 +1,4 @@
+# DynMapのドメインを記載してください。最後はスラッシュで終わるようにしてください。
+# 例:
+# map-domain: "http://map.my-domain.com/"
+map-domain: ""

@@ -1,0 +1,11 @@
+name: @name@
+version: @version@
+main: click.seichi.whereami.WhereAmI
+commands:
+  whereami:
+    usage: /whereami reload
+    description: This is a command to execute something about WhereAmI.
+perimissions:
+  whereami.reload:
+    description: This permission allows a player to reload config.
+    default: op
