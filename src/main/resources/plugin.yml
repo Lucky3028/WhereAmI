@@ -4,8 +4,14 @@ main: click.seichi.whereami.WhereAmI
 commands:
   whereami:
     usage: /whereami reload
-    description: This is a command to execute something about WhereAmI.
+    description: This is a command to reload WhereAmI config.
+  map:
+    usage: /map
+    description: This is a command to show show a link to the player's location.
 perimissions:
+  whereami.map:
+    description: This permission allows a player to show a link to the player's location.
+    default: true
   whereami.reload:
-    description: This permission allows a player to reload config.
+    description: This permission allows a sender to reload config.
     default: op
