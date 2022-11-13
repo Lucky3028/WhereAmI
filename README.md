@@ -1,6 +1,6 @@
 # WhereAmI
 
-This plugin will add a command to show a link to the player's location in the web map.
+This spigot plugin will add a command to show a link to the player's location in the web map.
 
 ## Commands and permissions
 
