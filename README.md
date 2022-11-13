@@ -9,7 +9,7 @@ This spigot plugin will add a command to show a link to the player's location in
 | `/whereami reload` | Reloads config. | `whereami.reload` | op                 |
 | `/map`             | Shows a link.   | `whereami.map`    | true               |           
 
-## Config
+## Config (config.yml)
 
 ```yaml
 # Write your web map domain. It must start with "http" or "https", and end with slash.
