@@ -1,4 +1,4 @@
-# DynMapのドメインを記載してください。最後はスラッシュで終わるようにしてください。
-# 例:
+# Write your web map domain. It must start with "http" or "https", and end with slash.
+# e.g.
 # map-domain: "http://map.my-domain.com/"
 map-domain: ""
