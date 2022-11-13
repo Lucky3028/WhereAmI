@@ -36,7 +36,7 @@ object ShowMap extends CommandExecutor {
     val location = player.getLocation
     val url =
       s"$mapDomain?worldname=${location.getWorld.getName}&mapname=flat&zoom=2&x=${location.getBlockX}&y=${location.getBlockY}&z=${location.getBlockZ}"
-    player.sendMessage(s"${ChatColor.GREEN}Here is your map!: $url")
+    player.sendMessage(s"${ChatColor.GREEN}Here is your map!: ${ChatColor.UNDERLINE}$url")
 
     true
   }
