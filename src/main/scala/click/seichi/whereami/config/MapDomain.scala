@@ -8,6 +8,7 @@ object MapDomain {
   private var value: Option[String] = None
 
   def load()(implicit instance: JavaPlugin): Unit = {
+    instance.reloadConfig()
     val newValue = Option(instance.getConfig.getString(configPath))
     require(newValue.isDefined, errMessage)
 
