@@ -26,7 +26,8 @@ object ShowMap extends CommandExecutor {
       return true
     }
 
-    val mapDomain = MapDomain.get().getOrElse {
+    val mapDomain = MapDomain.get()
+    if (mapDomain.isEmpty) {
       player.sendMessage(
         s"${ChatColor.RED}The map's domain is not set. Please contact to server administrators."
       )

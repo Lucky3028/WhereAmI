@@ -5,19 +5,15 @@ import org.bukkit.plugin.java.JavaPlugin
 object MapDomain {
   private val configPath = "map-domain"
   private val errMessage = "The config value ('map-domain') is not set."
-  private var value: Option[String] = None
+  private var value: String = ""
 
   def load()(implicit instance: JavaPlugin): Unit = {
     instance.reloadConfig()
-    val newValue = Option(instance.getConfig.getString(configPath))
-    require(newValue.isDefined, errMessage)
+    val newValue = instance.getConfig.getString(configPath)
+    require(newValue.nonEmpty, errMessage)
 
     value = newValue
   }
 
-  def get(): Option[String] = {
-    require(value.isDefined, errMessage)
-
-    value
-  }
+  def get(): String = value
 }
