@@ -54,7 +54,7 @@ unmanagedResources / excludeFilter :=
 
 lazy val root = (project in file(".")).settings(
   name := "WhereAmI",
-  scalaVersion := "2.13.11",
+  scalaVersion := "2.13.12",
   assembly / assemblyJarName := s"${name.value}-${version.value}.jar",
   assembly / test := (Test / test).value, // assmeblyの中でtestをする
   // scalafixがsemanticdbを必要とする
